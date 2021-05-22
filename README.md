@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Clone the repo
 
 ```shell
-git clone https://github.com/nitinbngowda/test
+git clone https://github.com/nitinbngowda/test.git
 cd kaplanTest
 ```
 
