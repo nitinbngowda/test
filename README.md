@@ -2,7 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
 
+## Get started
+
+### Clone the repo
+
+```shell
+git clone https://github.com/nitinbngowda/test
+cd kaplanTest
+```
+
+Install the `npm` packages described in the `package.json` and verify that it works:
+
+```shell
+npm install
+```
+
 ## Development server
+```shell
+ng serve
+```
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
