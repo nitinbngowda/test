@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="top-heading">
+    <div>
+      <h1 class="topic">
+        Books
+      </h1>
+    </div>
+    <div>
+      <button tabindex="2" mat-raised-button color="primary">Create New Book</button>
+    </div>
+  </div>
+
+  <div>
+    <mat-form-field class="search-input">
+      <mat-label>Search</mat-label>
+      <input tabindex="1" (keyup)="searchBooks($event.target.value)" matInput placeholder="Ex: kaplan test prep" value="">
+      <mat-icon matPrefix>search</mat-icon>
+    </mat-form-field>
+  </div>
+
+  <div class="sub-topic">
+    <h2>
+      All Books
+    </h2>
+  </div>
+
+  <div class="card-container">
+    <div class="card" *ngFor="let book of books?.items">
+      <mat-card class="custom-mat-card">
+        <div class="card-contents">
+          <div class="title">
+            {{ book.volumeInfo?.title || 'N/A'}}
+          </div>
+          <div>
+            Authors: {{book.volumeInfo?.authors|| 'N/A'}}
+          </div>
+          <div>
+            Publisher: {{book.volumeInfo?.publisher || 'N/A'}}
+          </div>
+          <div>
+            Published Date: {{book.volumeInfo?.publishedDate || 'N/A'}}
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

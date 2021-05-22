@@ -1,0 +1,16 @@
+<div class="sidenav-container" [class.expanded]="expanded">
+  <div class="all-options">
+    <a tabindex="3" class="options" (keyup.enter)="toggleSideNav()" (click)="toggleSideNav()">
+      <mat-icon aria-hidden="false" aria-label="menu icon">menu</mat-icon>
+      <span *ngIf="expanded">MENU</span>
+    </a>
+    <a [routerLink]="'content-management'" class="options">
+      <mat-icon aria-hidden="false" aria-label="content management icon">tab</mat-icon>
+      <span *ngIf="expanded">CONTENT MANAGEMENT</span>
+    </a>
+    <a [routerLink]="'courses'" class="options">
+      <mat-icon aria-hidden="false" aria-label="courses icon">book</mat-icon>
+      <span *ngIf="expanded">COURSES</span>
+    </a>
+  </div>
+</div>

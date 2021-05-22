@@ -1,0 +1,20 @@
+.header-custom {
+  background-color: white;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  a.logo {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #013ca9;
+    margin-left: 2rem;
+  }
+
+}
+
+.logo-main {
+  max-height: 50px;
+}

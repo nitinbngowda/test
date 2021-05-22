@@ -1,0 +1,30 @@
+.sidenav-container {
+  .all-options {
+    position: sticky;
+    top: 0;
+  }
+
+  .mat-icon {
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+
+  width: 50px;
+  transition: width 0.2s;
+  background: white;
+  box-shadow: 2px 0 6px 0 rgba(0,0,0,0.2);
+  height: 100%;
+  color: #bbbbbb;
+  
+  &.expanded {
+    width: 250px;
+  }
+
+  a.options {
+    padding: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: #bbbbbb;
+  }
+}

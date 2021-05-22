@@ -1,0 +1,70 @@
+.container {
+  margin: 2rem;
+}
+
+.top-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+
+.topic {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.sub-topic {
+  color: #465b75;
+}
+
+.search-input {
+  width: 50%;
+  font-size: 16px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  div {
+    line-height: 1.7rem;
+  }
+
+  :nth-child(even) {
+    .custom-mat-card {
+      margin-left: 1rem;
+    }
+  }
+
+  :nth-child(odd) {
+    .custom-mat-card {
+      margin-right: 1rem;
+    }
+  }
+
+  .card {
+    width: 50%;
+    margin: 10px 0;
+  }
+
+  .card-contents {
+    color: #465b75;
+    padding: 16px 20px;
+  }
+
+  .custom-mat-card {
+    border-left: 5px solid #fdac32;
+    padding: 0;
+    height: 100%;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+mat-icon {
+  vertical-align: middle;
+}
