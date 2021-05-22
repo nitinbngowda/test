@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
-import { Books } from 'src/models/books';
+import { Books } from 'src/app/models/books';
 import { BooksService } from '../services/books.service';
 import { debounceTime } from 'rxjs/operators';
 import { MatSnackBar } from '@angular/material/snack-bar';
